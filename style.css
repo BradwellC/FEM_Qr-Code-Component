@@ -1,0 +1,97 @@
+@import url('https://fonts.google.com/specimen/Outfit');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --lightGrey: hsl(212, 45%, 89%);
+    --greyBlue: hsl(220, 15%, 55%);
+    --darkBlue: hsl(218, 44%, 22%);
+
+    --fs-main: 15px;
+
+    --fw-light: 400;
+    --fw-bold: 700;
+
+    --background-main: var(--greyBlue);
+    --ff-main: 'Outfit', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--ff-main);
+    font-size: var(--fs-main);
+}
+
+.container {
+    background-color: var(--lightGrey);
+    height: 98vh;
+    vertical-align: middle;
+    padding: 6rem 0;
+}
+
+.qr-code {
+    width: 17.5%;
+    margin: auto;
+    align-items: center;
+    background-color: var(--White);
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.qr-code_body {
+    padding: 15px 5px;
+}
+
+.qr-code_title {
+    color: var(--darkBlue);
+    font-weight: var(--fw-bold);
+    padding: 10px 0;
+}
+
+.qr-code_content {
+    font-size: 13px;
+    color: var(--greyBlue);
+    padding: 10px;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 10px;
+    align-items: center;
+    margin: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        padding: 3rem 0;
+    }
+    .qr-code {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 376px) {
+    .container {
+        padding: 1rem 0;
+    }
+    .qr-code {
+        width: 90%;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
